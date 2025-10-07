@@ -22,3 +22,12 @@ body{
 .footer{border-top:1px solid #f2ede6}
 .fade-up{opacity:0;transform:translateY(14px);transition:all .6s ease}
 .fade-up.show{opacity:1;transform:none}
+.how-box {
+  min-height: 300px;          /* makes the boxes taller */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;    /* vertically centers content */
+}
+.how-box .fs-3 {
+  color: #b2956b;             /* gold titles */
+}
