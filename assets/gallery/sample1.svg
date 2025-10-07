@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/200/svg" viewBox="0 0 1200 1600">
+  <rect width="1200" height="1600" fill="#f7efe7"/>
+  <circle cx="600" cy="600" r="250" fill="#e6c9a8"/>
+  <text x="600" y="1250" text-anchor="middle" font-family="Montserrat, Poppins, Arial" font-size="64" fill="#947a5b">DaisyMo Studio</text>
+</svg>

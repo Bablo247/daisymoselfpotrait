@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200">
+  <rect width="1600" height="1200" fill="#fffaf7"/>
+  <rect x="200" y="100" width="1200" height="800" rx="40" ry="40" fill="#f2dfce"/>
+  <text x="800" y="600" text-anchor="middle" dominant-baseline="middle" font-family="Montserrat, Poppins, Arial" font-size="56" fill="#6b5b4b">Self-Portrait, Your Way</text>
+</svg>
