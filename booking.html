@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booking — DaisyMo Self-Portrait Studio</title>
+  <meta name="description" content="Book your DaisyMo session via Calendly. See pricing and policy (72-hour rescheduling).">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Booking — DaisyMo Self-Portrait Studio">
+  <meta property="og:description" content="Book your DaisyMo session via Calendly. See pricing and policy (72-hour rescheduling).">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/gallery/sample1.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="icon" href="/assets/gallery/favicon.jpg">
+</head>
+<body>
+<header class="navbar navbar-expand-lg bg-white sticky-top" aria-label="Main Navigation">
+  <div class="container">
+  <a class="navbar-brand" href="/index.html" aria-label="DaisyMo Home">
+  <img src="/assets/gallery/logo-removebg-preview (1).png" alt="DaisyMo logo" height="75" class="d-inline-block align-text-top">
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <nav class="collapse navbar-collapse" id="nav">
+       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="/booking.html">Booking</a></li>
+       <li class="nav-item"><a class="nav-link" href="/gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="/faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="btn btn-gold ms-lg-3" href="/booking.html">Book Now</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="py-5">
+  <div class="container container-narrow">
+    <h1 class="mb-4">Book Your Session</h1>
+    <div class="card card-soft p-3 mb-4">
+      <div class="calendly-inline-widget" data-url="https://calendly.com/bablo247" style="min-width:320px;height:780px" aria-label="Calendly booking widget"></div>
+    </div>
+
+    <h2 class="h4 mt-4">Pricing</h2>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="card card-soft h-100 p-4">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <div class="fw-semibold">30-Minute</div>
+            <div class="fs-5" style="color:#b2956b">$79</div>
+          </div>
+          <ul class="mb-3"><li>Private studio</li><li>Up to 50 shots</li><li>5 edited selects</li></ul>
+          <a href="#top" class="btn btn-gold" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Choose</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-soft h-100 p-4">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <div class="fw-semibold">1-Hour</div>
+            <div class="fs-5" style="color:#b2956b">$129</div>
+          </div>
+          <ul class="mb-3"><li>Private studio</li><li>Up to 120 shots</li><li>10 edited selects</li></ul>
+          <a href="#top" class="btn btn-gold" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Choose</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-soft h-100 p-4">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <div class="fw-semibold">Group / Duo</div>
+            <div class="fs-5" style="color:#b2956b">$189</div>
+          </div>
+          <ul class="mb-3"><li>Private studio</li><li>Shared time</li><li>15 edited selects</li></ul>
+          <a href="#top" class="btn btn-gold" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Choose</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert alert-light mt-4 border rounded-4" role="note">
+      <strong>Deposits & Rescheduling:</strong> A deposit is required to secure your slot. You may reschedule up to <strong>72 hours</strong> before your session.
+    </div>
+  </div>
+</main>
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+<footer class="footer py-4 mt-5">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+    <div class="small text-muted">
+      © <span id="year"></span> DaisyMo — Minnesota. All rights reserved.
+    </div>
+    <div class="d-flex align-items-center gap-3">
+      <a class="text-decoration-none" href="https://instagram.com" aria-label="Instagram">Instagram</a>
+      <a class="text-decoration-none" href="https://facebook.com" aria-label="Facebook">Facebook</a>
+      <a class="text-decoration-none" href="mailto:hello@daisymo.studio" aria-label="Email">Email</a>
+      <a class="btn btn-gold" href="/booking.html">Book Now</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
