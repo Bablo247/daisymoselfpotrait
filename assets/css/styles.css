@@ -22,12 +22,49 @@ body{
 .footer{border-top:1px solid #f2ede6}
 .fade-up{opacity:0;transform:translateY(14px);transition:all .6s ease}
 .fade-up.show{opacity:1;transform:none}
+/* Icon pulse animation */
+.how-box:hover i {
+  color: #e6c9a8;                      /* blush tone on hover */
+  animation: iconPulse 800ms ease-in-out infinite;
+}
+
+/* optional: keep the card lift + glow */
+.how-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+/* smooth base transitions */
 .how-box {
-  min-height: 300px;          /* makes the boxes taller */
+  min-height: 320px;
   display: flex;
   flex-direction: column;
-  justify-content: center;    /* vertically centers content */
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.how-box .fs-3 {
-  color: #b2956b;             /* gold titles */
+.how-box i {
+  transition: color 0.3s ease;
 }
+
+/* keyframes for the icon pulse + soft glow */
+@keyframes iconPulse {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0 rgba(178,149,107,0));
+  }
+  50% {
+    transform: scale(1.12);
+    filter: drop-shadow(0 6px 16px rgba(178,149,107,0.35)); /* gold-ish glow */
+  }
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0 rgba(178,149,107,0));
+  }
+}
+
+/* accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .how-box, .how-box i { transition: none !important; }
+  .how-box:hover i { animation: none !important; }
+}
+
